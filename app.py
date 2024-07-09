@@ -171,6 +171,6 @@ fig.update_xaxes(
     rangebreaks = [dict(values = dt_breaks)]
 )
 
-fig.show()
+#fig.show()
 
-#st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
