@@ -175,4 +175,4 @@ fig.update_xaxes(
 
 st.plotly_chart(fig, use_container_width=True)
 
-st.dataframe(df1.loc[year_0:year_1])
+st.dataframe(df1)
