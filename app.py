@@ -142,7 +142,7 @@ fig.add_trace(go.Scatter(x = df1.loc[year_0:year_1].index, y = Lower_Band_12m2d
 
 
 fig.update_layout(height = 600, width = 800
-                , title_text = "Monthly S&D Volatility Zones: " + ticker1 + " - " + str(datetime.today().date()) + "-" + str(df1.loc[year_0:year_1]["Adj Close"])
+                , title_text = "Monthly S&D Volatility Zones: " + ticker1
                 , font_color = "blue"
                 , title_font_color = "black"
                 , yaxis_title = "close"
@@ -174,3 +174,5 @@ fig.update_xaxes(
 #fig.show()
 
 st.plotly_chart(fig, use_container_width=True)
+
+st.dataframe(df1.loc[year_0:year_1])
