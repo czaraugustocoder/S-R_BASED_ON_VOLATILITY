@@ -47,7 +47,7 @@ else:
     ticker1 = acao_cod
 
 print(ticker1)
-df1 = yf.download(ticker1, "2012-01-01", "2024-01-01")
+df1 = yf.download(ticker1, "2018-01-01", str(str(datetime.today().year)+"-"+str(datetime.today().month)+"-"+str(datetime.today().day)))
 df1["Returns"] = df1["Adj Close"].pct_change(1)
 df1["Adj Low"] = df1["Low"] - (df1["Close"]-df1["Adj Close"])
 df1["Adj High"] = df1["High"] - (df1["Close"]-df1["Adj Close"])
@@ -76,8 +76,8 @@ def gerar_datas_entre(data_inicio, data_fim):
     return datas
 
 # Exemplo de uso
-data_inicio = '2023-01'
-data_fim = '2023-07'
+data_inicio = '2024-01'
+data_fim = '2024-07'
 
 datas = gerar_datas_entre(data_inicio, data_fim)
 print(datas)
