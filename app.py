@@ -10,18 +10,6 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-st.set_page_config(page_title="S-R_BASED_ON_VOLATILITY",
-                   layout="wide"
-)
-
-st.markdown("""
-<style>
-    [data-testid=stSidebar] {
-        background-color: #000080;
-    }
-</style>
-""", unsafe_allow_html=True)
-
 st.title('Supply and Demand Levels Forecasting Based on Returns Volatility')
 
 st.write("""
