@@ -19,7 +19,7 @@ Jinja2==3.1.4
 jsonschema==4.22.0
 jsonschema-specifications==2023.12.1
 kiwisolver==1.4.5
-lxml==5.2.2 --only-binary=:all:
+lxml==5.3.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 matplotlib==3.9.0
@@ -60,4 +60,5 @@ watchdog==4.0.1
 webencodings==0.5.1
 yahoo-finance==1.4.0
 yfinance==0.2.40
+
 
