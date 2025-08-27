@@ -59,6 +59,7 @@ urllib3==2.2.2
 watchdog==4.0.1
 webencodings==0.5.1
 yahoo-finance==1.4.0
-yfinance==0.2.40
+yfinance==0.2.54
+
 
 
